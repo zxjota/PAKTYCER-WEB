@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PAKTYCER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 40px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .app-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3949ab, #5c6bc0);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .app-logo i {
+            font-size: 28px;
+            color: white;
+        }
+        
+        .app-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .header-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .content-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        h1 {
+            color: #1a237e;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f1f1f1;
+        }
+        
+        h2 {
+            color: #3949ab;
+            font-size: 1.6rem;
+            margin: 30px 0 15px 0;
+        }
+        
+        h3 {
+            color: #1a237e;
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3949ab;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-info a {
+            color: #3949ab;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .update-date {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 25px 0;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #3949ab;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(57, 73, 171, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            background-color: #303f9f;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            .app-title {
+                font-size: 2.2rem;
+            }
+        }
+        
+        .section-nav {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .section-nav h3 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        
+        .section-nav ul {
+            list-style-type: none;
+            margin-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .section-nav li {
+            margin-bottom: 8px;
+        }
+        
+        .section-nav a {
+            color: #3949ab;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        
+        .section-nav a:hover {
+            background-color: #e9ecef;
+        }
+        
+        .app-feature {
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .app-feature h3 {
+            color: #3949ab;
+            margin-top: 0;
+        }
+        
+        .privacy-note {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="app-logo">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h1 class="app-title">PAKTYCER</h1>
+            </div>
+            <p class="header-subtitle">Privacy Policy and Data Protection</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section-nav">
+            <h3><i class="fas fa-bookmark"></i> Privacy Policy Sections</h3>
+            <ul>
+                <li><a href="#introduction"><i class="fas fa-info-circle"></i> Introduction</a></li>
+                <li><a href="#about-paktycer"><i class="fas fa-info-circle"></i> About PAKTYCER</a></li>
+                <li><a href="#data-collection"><i class="fas fa-database"></i> Data Collection</a></li>
+                <li><a href="#data-use"><i class="fas fa-cogs"></i> How We Use Data</a></li>
+                <li><a href="#data-sharing"><i class="fas fa-share-alt"></i> Data Sharing</a></li>
+                <li><a href="#data-security"><i class="fas fa-shield-alt"></i> Data Security</a></li>
+                <li><a href="#user-rights"><i class="fas fa-user-check"></i> Your Rights</a></li>
+                <li><a href="#children"><i class="fas fa-child"></i> Children's Privacy</a></li>
+                <li><a href="#changes"><i class="fas fa-sync-alt"></i> Policy Changes</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-card">
+            <h1>Privacy Policy for PAKTYCER</h1>
+            
+            <div class="update-date">
+                <p><strong>Last Updated:</strong> January 30, 2026</p>
+            </div>
+            
+            <p>This Privacy Policy describes how PAKTYCER ("we", "us", or "our") collects, uses, and shares your personal information when you use our application and services. We are committed to protecting your privacy and handling your data in an open and transparent manner.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> By using PAKTYCER, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with any part of this policy, please do not use our application.</p>
+            </div>
+            
+            <h2 id="introduction">1. Introduction</h2>
+            <p>PAKTYCER is committed to protecting the privacy of our users. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to your personal data. We comply with applicable data protection laws, including but not limited to the California Consumer Privacy Act (CCPA) and other U.S. privacy regulations.</p>
+            
+            <h2 id="about-paktycer">2. About PAKTYCER</h2>
+            <p>PAKTYCER is a fitness tracking application designed to help you easily track every workout. Unlike many other apps, PAKTYCER respects your privacy by design:</p>
+            
+            <div class="app-feature">
+                <h3><i class="fas fa-lock"></i> Privacy-First Design</h3>
+                <p>PAKTYCER is built with your privacy as a core principle:</p>
+                <ul>
+                    <li><strong>No Account Required:</strong> You don't need to register an account to use PAKTYCER</li>
+                    <li><strong>No Cloud Services:</strong> The app operates completely offline with no reliance on network services</li>
+                    <li><strong>Local Storage Only:</strong> All your fitness data is stored locally on your device</li>
+                    <li><strong>No Data Collection:</strong> We don't collect, track, or analyze your personal workout data</li>
+                </ul>
+            </div>
+            
+            <div class="privacy-note">
+                <p><strong>Note:</strong> Since PAKTYCER stores all data locally on your device and doesn't connect to any external servers, most data collection practices described in this privacy policy are precautionary measures for potential future features. Currently, PAKTYCER operates as a completely local application.</p>
+            </div>
+            
+            <h2 id="data-collection">3. Information We Collect</h2>
+            <p>PAKTYCER is designed to minimize data collection. We only collect essential information needed for basic app functionality:</p>
+            
+            <h3>3.1 Fitness Data (Stored Locally)</h3>
+            <p>When you use PAKTYCER, you may choose to enter fitness information that is stored only on your device:</p>
+            <ul>
+                <li>Workout type (running, yoga, strength training, HIIT, etc.)</li>
+                <li>Exercise duration and timing</li>
+                <li>Estimated calories burned (calculated locally)</li>
+                <li>Workout dates and custom notes</li>
+                <li>Exercise history and progress tracking data</li>
+            </ul>
+            
+            <h3>3.2 App Usage Data (Optional)</h3>
+            <p>If you choose to enable optional features, we may collect:</p>
+            <ul>
+                <li>Anonymous crash reports to improve app stability (optional)</li>
+                <li>Basic app performance metrics (optional)</li>
+                <li>Feature usage patterns to guide future improvements (optional)</li>
+            </ul>
+            
+            <h3>3.3 No Mandatory Personal Information</h3>
+            <p>PAKTYCER does NOT require you to provide:</p>
+            <ul>
+                <li>Name, email address, or contact information</li>
+                <li>Account credentials or registration details</li>
+                <li>Payment information (the app is free with no in-app purchases)</li>
+                <li>Location data (unless explicitly enabled for specific features)</li>
+            </ul>
+            
+            <h2 id="data-use">4. How We Use Your Information</h2>
+            <p>Given PAKTYCER's local-first design, data usage is extremely limited:</p>
+            <ul>
+                <li>To provide and maintain core fitness tracking functionality</li>
+                <li>To allow you to review and analyze your workout history</li>
+                <li>To calculate progress and provide visual insights (all processing happens locally)</li>
+                <li>To improve app performance based on anonymous crash reports (if enabled)</li>
+                <li>To develop new features that respect your privacy preferences</li>
+            </ul>
+            
+            <h2 id="data-sharing">5. How We Share Your Information</h2>
+            <p>PAKTYCER is designed to protect your privacy:</p>
+            
+            <h3>5.1 No Sharing of Your Fitness Data</h3>
+            <p>Your workout data remains on your device. We do not access, collect, or share your personal fitness information.</p>
+            
+            <h3>5.2 Anonymous Data (Optional)</h3>
+            <p>If you choose to enable optional analytics, we may share anonymous, aggregated usage data with service providers to help us improve the app. This data cannot be used to identify you.</p>
+            
+            <h3>5.3 Legal Requirements</h3>
+            <p>We may disclose information if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency).</p>
+            
+            <h2 id="data-security">6. Data Security</h2>
+            <p>PAKTYCER employs multiple security measures to protect your data:</p>
+            
+            <h3>6.1 Local Data Protection</h3>
+            <p>Since all your fitness data is stored locally on your device, it benefits from your device's built-in security features. We recommend that you:</p>
+            <ul>
+                <li>Use device security features (passcode, biometrics)</li>
+                <li>Keep your device's operating system updated</li>
+                <li>Regularly back up your device to preserve your fitness history</li>
+            </ul>
+            
+            <h3>6.2 Data Encryption</h3>
+            <p>PAKTYCER uses your device's native encryption for stored data, providing an additional layer of security for your fitness information.</p>
+            
+            <h3>6.3 No External Data Transmission</h3>
+            <p>Since PAKTYCER doesn't transmit your fitness data to external servers, there's no risk of interception during data transmission.</p>
+            
+            <h2 id="user-rights">7. Your Rights and Choices</h2>
+            <p>With PAKTYCER, you have complete control over your data:</p>
+            <ul>
+                <li><strong>Complete Control:</strong> You can view, edit, or delete any workout entry at any time</li>
+                <li><strong>No Accounts:</strong> Since there's no account, there's no profile data to manage externally</li>
+                <li><strong>Local Deletion:</strong> Uninstalling the app removes all your data from the device</li>
+                <li><strong>Optional Features:</strong> All data collection beyond local storage is optional and can be disabled</li>
+                <li><strong>Export Capability:</strong> You can export your fitness data for personal backup (future feature)</li>
+            </ul>
+            
+            <h2 id="children">8. Children's Privacy</h2>
+            <p>PAKTYCER is suitable for users of all ages as it doesn't collect personal information. The app can be used by anyone interested in tracking their fitness activities. Since no data leaves the device, there are no special age restrictions or parental consent requirements.</p>
+            
+            <h2 id="changes">9. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this policy. For significant changes that affect how PAKTYCER handles data, we will provide a more prominent notice within the application.</p>
+            
+            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            
+            <h2 id="contact">10. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:ammasmeal@gmail.com">ammasmeal@gmail.com</a></p>
+                <p><strong>Regarding:</strong> PAKTYCER Privacy Policy Inquiry</p>
+                <p>We will respond to your request within a reasonable timeframe and in accordance with applicable law.</p>
+            </div>
+            
+            <div class="update-date">
+                <p>This Privacy Policy is effective as of January 30, 2026.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2026 PAKTYCER. All rights reserved.</p>
+            <p>PAKTYCER makes it easy to track every workout. Your data stays on your device.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script>
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize back to top button visibility
+        window.addEventListener('load', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
